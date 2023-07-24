@@ -1,12 +1,8 @@
-describe('Logout', () => {
-  beforeEach(() => {
-    cy.login()
-    cy.visit('/')
-  })
-
+describe('Login', () => {
   it('successfully', () => {
-    cy.logout()
+    cy.login()
 
-    cy.url().should('be.equal', `${Cypress.config('baseUrl')}/users/sign_in`)
+    cy.get('.qa-user-avatar').should('be.visible')
   })
 })
+
