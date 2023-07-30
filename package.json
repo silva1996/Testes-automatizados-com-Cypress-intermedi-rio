@@ -5,3 +5,7 @@
     "cypress-plugin-api": "^2.6.1"
   }
 }
+"scripts": {
+  "cy:open": "cypress open",
+  "test": "cypress run"
+},
